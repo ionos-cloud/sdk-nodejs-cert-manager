@@ -120,13 +120,14 @@ export class Configuration {
         this.maxRetries = DEFAULT_MAX_RETRIES;
         this.maxWaitTime = DEFAULT_MAX_WAIT_TIME;
         this.debug = false;
-        this.setUserAgent('ionos-cloud-cert-manager-node/v1.0.0');
+        this.setUserAgent('ionos-cloud-cert-manager-node/v1.0.1');
     }
 
     static fromEnv(): Configuration {
         const configParams: ConfigurationParameters = {
             username: process.env.IONOS_USERNAME,
-            password: process.env.IONOS_PASSWORD
+            password: process.env.IONOS_PASSWORD,
+            apiKey: process.env.IONOS_TOKEN,
         }
         configParams.basePath = process.env.IONOS_API_URL || configParams.basePath
         configParams.debug = process.env.IONOS_DEBUG !== undefined

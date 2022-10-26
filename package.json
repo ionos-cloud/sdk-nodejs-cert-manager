@@ -1,6 +1,6 @@
 {
   "name": "@ionos-cloud/sdk-nodejs-cert-manager",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NodeJS SDK for Certificate Manager",
   "author": "Ionos",
   "keywords": [

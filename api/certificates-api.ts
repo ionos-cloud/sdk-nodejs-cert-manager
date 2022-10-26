@@ -67,7 +67,7 @@ export const CertificatesApiAxiosParamCreator = function (configuration?: Config
                 const localVarApiKeyValue = typeof configuration.apiKey === 'function'
                     ? await configuration.apiKey("Authorization")
                     : await configuration.apiKey;
-                localVarHeaderParameter["Authorization"] = localVarApiKeyValue;
+                localVarHeaderParameter["Authorization"] = "Bearer " + localVarApiKeyValue;
             }
 
 
@@ -121,7 +121,7 @@ export const CertificatesApiAxiosParamCreator = function (configuration?: Config
                 const localVarApiKeyValue = typeof configuration.apiKey === 'function'
                     ? await configuration.apiKey("Authorization")
                     : await configuration.apiKey;
-                localVarHeaderParameter["Authorization"] = localVarApiKeyValue;
+                localVarHeaderParameter["Authorization"] = "Bearer " + localVarApiKeyValue;
             }
 
             if ((offset === undefined) && (configuration !== undefined)) {
@@ -192,7 +192,7 @@ export const CertificatesApiAxiosParamCreator = function (configuration?: Config
                 const localVarApiKeyValue = typeof configuration.apiKey === 'function'
                     ? await configuration.apiKey("Authorization")
                     : await configuration.apiKey;
-                localVarHeaderParameter["Authorization"] = localVarApiKeyValue;
+                localVarHeaderParameter["Authorization"] = "Bearer " + localVarApiKeyValue;
             }
 
 
@@ -253,7 +253,7 @@ export const CertificatesApiAxiosParamCreator = function (configuration?: Config
                 const localVarApiKeyValue = typeof configuration.apiKey === 'function'
                     ? await configuration.apiKey("Authorization")
                     : await configuration.apiKey;
-                localVarHeaderParameter["Authorization"] = localVarApiKeyValue;
+                localVarHeaderParameter["Authorization"] = "Bearer " + localVarApiKeyValue;
             }
 
 
@@ -316,7 +316,7 @@ export const CertificatesApiAxiosParamCreator = function (configuration?: Config
                 const localVarApiKeyValue = typeof configuration.apiKey === 'function'
                     ? await configuration.apiKey("Authorization")
                     : await configuration.apiKey;
-                localVarHeaderParameter["Authorization"] = localVarApiKeyValue;
+                localVarHeaderParameter["Authorization"] = "Bearer " + localVarApiKeyValue;
             }
 
 

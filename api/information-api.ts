@@ -56,7 +56,7 @@ export const InformationApiAxiosParamCreator = function (configuration?: Configu
                 const localVarApiKeyValue = typeof configuration.apiKey === 'function'
                     ? await configuration.apiKey("Authorization")
                     : await configuration.apiKey;
-                localVarHeaderParameter["Authorization"] = localVarApiKeyValue;
+                localVarHeaderParameter["Authorization"] = "Bearer " + localVarApiKeyValue;
             }
 
 
@@ -108,7 +108,7 @@ export const InformationApiAxiosParamCreator = function (configuration?: Configu
                 const localVarApiKeyValue = typeof configuration.apiKey === 'function'
                     ? await configuration.apiKey("Authorization")
                     : await configuration.apiKey;
-                localVarHeaderParameter["Authorization"] = localVarApiKeyValue;
+                localVarHeaderParameter["Authorization"] = "Bearer " + localVarApiKeyValue;
             }
 
 
@@ -160,7 +160,7 @@ export const InformationApiAxiosParamCreator = function (configuration?: Configu
                 const localVarApiKeyValue = typeof configuration.apiKey === 'function'
                     ? await configuration.apiKey("Authorization")
                     : await configuration.apiKey;
-                localVarHeaderParameter["Authorization"] = localVarApiKeyValue;
+                localVarHeaderParameter["Authorization"] = "Bearer " + localVarApiKeyValue;
             }
 
 
